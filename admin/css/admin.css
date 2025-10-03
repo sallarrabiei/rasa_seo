@@ -1,0 +1,562 @@
+/* WP SEO Pro Admin Styles */
+
+.wp-seo-pro-admin {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Dashboard Styles */
+.wp-seo-pro-dashboard {
+    max-width: 1200px;
+}
+
+.wp-seo-pro-welcome {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.wp-seo-pro-welcome h2 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.wp-seo-pro-welcome p {
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.wp-seo-pro-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.wp-seo-pro-dashboard-card {
+    background: #fff;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wp-seo-pro-dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.wp-seo-pro-dashboard-card h3 {
+    margin: 0 0 20px 0;
+    color: #23282d;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid #f0f0f1;
+    padding-bottom: 10px;
+}
+
+/* Setup Status */
+.wp-seo-pro-setup-status {
+    margin-bottom: 20px;
+}
+
+.setup-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f1;
+    font-size: 14px;
+}
+
+.setup-item:last-child {
+    border-bottom: none;
+}
+
+.setup-item.completed {
+    color: #00a32a;
+}
+
+.setup-item.incomplete {
+    color: #d63638;
+}
+
+.setup-item::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.setup-item.completed::before {
+    background: #00a32a;
+    content: '✓';
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.setup-item.incomplete::before {
+    background: #f0f0f1;
+    content: '○';
+    color: #d63638;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.setup-progress {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #f0f0f1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00a32a, #00b32a);
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+/* SEO Stats */
+.seo-stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0073aa;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* Quick Actions */
+.quick-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.quick-actions .button {
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.quick-actions .button-primary {
+    background: #0073aa;
+    border-color: #0073aa;
+}
+
+.quick-actions .button-primary:hover {
+    background: #005a87;
+    border-color: #005a87;
+    transform: translateY(-1px);
+}
+
+.quick-actions .button:not(.button-primary) {
+    background: #f6f7f7;
+    border-color: #c3c4c7;
+    color: #50575e;
+}
+
+.quick-actions .button:not(.button-primary):hover {
+    background: #f0f0f1;
+    border-color: #8c8f94;
+    color: #1d2327;
+}
+
+/* Recent Activity */
+.recent-activity ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recent-activity li {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f1;
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-activity li:last-child {
+    border-bottom: none;
+}
+
+.recent-activity li strong {
+    color: #23282d;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.recent-activity li small {
+    color: #666;
+    font-size: 12px;
+}
+
+/* Settings Pages */
+.wp-seo-pro-settings-help {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.wp-seo-pro-settings-help h3 {
+    margin: 0 0 15px 0;
+    color: #23282d;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wp-seo-pro-settings-help ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+}
+
+.wp-seo-pro-settings-help li {
+    margin-bottom: 8px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Form Styles */
+.form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+    vertical-align: top;
+}
+
+.form-table td {
+    padding: 20px 10px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="url"],
+.form-table textarea {
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-table input[type="text"]:focus,
+.form-table input[type="url"]:focus,
+.form-table textarea:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+    outline: none;
+}
+
+.form-table .description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    accent-color: #0073aa;
+}
+
+/* Button Styles */
+.button-primary {
+    background: #0073aa;
+    border-color: #0073aa;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+}
+
+.button-primary:hover {
+    background: #005a87;
+    border-color: #005a87;
+}
+
+/* Migration Styles */
+.wp-seo-pro-migration-intro {
+    background: #f0f6fc;
+    border: 1px solid #c3c4c7;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 20px 0;
+    color: #1e1e1e;
+}
+
+.wp-seo-pro-no-migrations {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 6px;
+    padding: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.wp-seo-pro-no-migrations h3 {
+    color: #23282d;
+    margin-bottom: 15px;
+}
+
+.wp-seo-pro-migration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.wp-seo-pro-migration-card {
+    background: #fff;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.wp-seo-pro-migration-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0073aa, #005a87);
+}
+
+.wp-seo-pro-migration-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.migration-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.migration-header h3 {
+    margin: 0;
+    color: #23282d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.migration-version {
+    background: #f0f0f1;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.migration-description {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.migration-status {
+    margin-bottom: 20px;
+}
+
+.status-indicator {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status-indicator.status-pending {
+    background: #f0f6fc;
+    color: #0073aa;
+    border: 1px solid #c3c4c7;
+}
+
+.status-indicator.status-success {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.status-indicator.status-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c2c7;
+}
+
+.migration-actions {
+    margin-bottom: 20px;
+}
+
+.migration-actions .button {
+    margin-right: 10px;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+}
+
+.migration-progress {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #f0f0f1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0073aa, #005a87);
+    width: 0%;
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+.progress-text {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.migration-results {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.migration-results h4 {
+    margin: 0 0 15px 0;
+    color: #23282d;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.results-content ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+}
+
+.results-content li {
+    margin-bottom: 8px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wp-seo-pro-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .wp-seo-pro-migration-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .seo-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .migration-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+/* Loading Animation */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Success/Error Messages */
+.notice {
+    border-radius: 4px;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+.notice-success {
+    background: #d1e7dd;
+    border-left: 4px solid #00a32a;
+    color: #0f5132;
+}
+
+.notice-error {
+    background: #f8d7da;
+    border-left: 4px solid #d63638;
+    color: #721c24;
+}
+
+.notice-warning {
+    background: #fff3cd;
+    border-left: 4px solid #ffb900;
+    color: #664d03;
+}
+
+.notice-info {
+    background: #d1ecf1;
+    border-left: 4px solid #0073aa;
+    color: #0c5460;
+}

@@ -1,0 +1,4 @@
+.bss-card{background:#fff;border:1px solid #ccd0d4;border-radius:6px;padding:16px;margin:16px 0}
+.bss-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.bss-kpi{font-size:24px;font-weight:600;margin:0}
+.bss-muted{color:#666}
